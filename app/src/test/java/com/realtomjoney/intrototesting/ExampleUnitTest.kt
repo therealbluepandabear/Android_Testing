@@ -33,7 +33,10 @@ class ExampleUnitTest {
 }
 
 class EmailValidatorTests {
-
+    @Test
+    fun test_emailValidator() {
+        assertEquals(isValidEmail("test@example.com"), true)
+    }
 }
 
 fun isValidEmail(email: String): Boolean {
