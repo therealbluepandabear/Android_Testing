@@ -11,6 +11,14 @@ import org.junit.Assert.*
  */
 class ExampleUnitTest {
     @Test
+    fun stringIsFalse() {
+        val myMain = MainActivity()
+        val myStr = myMain.readValue()
+
+        assertNull(myStr)
+    }
+
+    @Test
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
     }
