@@ -30,12 +30,6 @@ class ExampleUnitTest {
             assertNull(activity.readValue())
         }
     }
-
-    @Test
-    fun test_someCalculation() {
-        ActivityScenario.launch(MainActivity::class.java).onActivity { activity ->
-        }
-    }
 }
 
 class EmailValidatorTests {
