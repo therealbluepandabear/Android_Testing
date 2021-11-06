@@ -9,6 +9,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
+    fun someCalculation(input: Double): Double {
+        return input.mod(13.0)
+    }
+
     fun readValue(): String? {
         return null
     }
