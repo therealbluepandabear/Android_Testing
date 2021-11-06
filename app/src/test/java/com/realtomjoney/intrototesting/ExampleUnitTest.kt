@@ -37,6 +37,11 @@ class EmailValidatorTests {
     fun test_emailValidator() {
         assertEquals(isValidEmail("test@example.com"), true)
     }
+
+    @Test
+    fun test_emailValidatorReturnsFalse() {
+        assertEquals(isValidEmail("test#example.com"), false)
+    }
 }
 
 fun isValidEmail(email: String): Boolean {
