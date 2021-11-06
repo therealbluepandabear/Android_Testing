@@ -23,4 +23,11 @@ class ExampleUnitTest {
             assert(activity.readValue() == null)
         }
     }
+
+    @Test
+    fun test_stringIsFalse() {
+        ActivityScenario.launch(MainActivity::class.java).onActivity { activity ->
+            assertNull(activity.readValue())
+        }
+    }
 }
