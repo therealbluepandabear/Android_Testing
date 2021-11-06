@@ -32,6 +32,10 @@ class ExampleUnitTest {
     }
 }
 
+class EmailValidatorTests {
+
+}
+
 fun isValidEmail(email: String): Boolean {
     if (email.contains("@") && email.contains(".")) {
         return true
